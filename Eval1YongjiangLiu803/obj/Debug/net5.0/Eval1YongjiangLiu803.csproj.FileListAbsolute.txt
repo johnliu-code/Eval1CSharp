@@ -1,0 +1,16 @@
+C:\Users\atdig\source\repos\Eval1YongjiangLiu803\Eval1YongjiangLiu803\bin\Debug\net5.0\Eval1YongjiangLiu803.exe
+C:\Users\atdig\source\repos\Eval1YongjiangLiu803\Eval1YongjiangLiu803\bin\Debug\net5.0\Eval1YongjiangLiu803.deps.json
+C:\Users\atdig\source\repos\Eval1YongjiangLiu803\Eval1YongjiangLiu803\bin\Debug\net5.0\Eval1YongjiangLiu803.runtimeconfig.json
+C:\Users\atdig\source\repos\Eval1YongjiangLiu803\Eval1YongjiangLiu803\bin\Debug\net5.0\Eval1YongjiangLiu803.runtimeconfig.dev.json
+C:\Users\atdig\source\repos\Eval1YongjiangLiu803\Eval1YongjiangLiu803\bin\Debug\net5.0\Eval1YongjiangLiu803.dll
+C:\Users\atdig\source\repos\Eval1YongjiangLiu803\Eval1YongjiangLiu803\bin\Debug\net5.0\Eval1YongjiangLiu803.pdb
+C:\Users\atdig\source\repos\Eval1YongjiangLiu803\Eval1YongjiangLiu803\obj\Debug\net5.0\Eval1YongjiangLiu803.csproj.AssemblyReference.cache
+C:\Users\atdig\source\repos\Eval1YongjiangLiu803\Eval1YongjiangLiu803\obj\Debug\net5.0\Eval1YongjiangLiu803.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\atdig\source\repos\Eval1YongjiangLiu803\Eval1YongjiangLiu803\obj\Debug\net5.0\Eval1YongjiangLiu803.AssemblyInfoInputs.cache
+C:\Users\atdig\source\repos\Eval1YongjiangLiu803\Eval1YongjiangLiu803\obj\Debug\net5.0\Eval1YongjiangLiu803.AssemblyInfo.cs
+C:\Users\atdig\source\repos\Eval1YongjiangLiu803\Eval1YongjiangLiu803\obj\Debug\net5.0\Eval1YongjiangLiu803.csproj.CoreCompileInputs.cache
+C:\Users\atdig\source\repos\Eval1YongjiangLiu803\Eval1YongjiangLiu803\obj\Debug\net5.0\Eval1YongjiangLiu803.dll
+C:\Users\atdig\source\repos\Eval1YongjiangLiu803\Eval1YongjiangLiu803\obj\Debug\net5.0\refint\Eval1YongjiangLiu803.dll
+C:\Users\atdig\source\repos\Eval1YongjiangLiu803\Eval1YongjiangLiu803\obj\Debug\net5.0\Eval1YongjiangLiu803.pdb
+C:\Users\atdig\source\repos\Eval1YongjiangLiu803\Eval1YongjiangLiu803\obj\Debug\net5.0\Eval1YongjiangLiu803.genruntimeconfig.cache
+C:\Users\atdig\source\repos\Eval1YongjiangLiu803\Eval1YongjiangLiu803\obj\Debug\net5.0\ref\Eval1YongjiangLiu803.dll
