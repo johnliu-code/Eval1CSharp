@@ -1,10 +1,42 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 
 namespace Eval1YongjiangLiu803
 {
     class Program
     {
+        //Method to add instance de Feriee
+        static Calendrier AddCalendrier(int anne, List<DateFeriee> dateFeriees, Dictionary<int, Feriee> feriees) 
+        {       
+            Console.WriteLine("Code entre 101 - 1231");
+            int code = Eval1.Exo03(int.Parse(Console.ReadLine()));
+            Console.WriteLine("Titre de Feriee");
+            string titre = Console.ReadLine();
+            Console.WriteLine("Regle Calcul date");
+            string regleCalcul = Console.ReadLine();
+
+            Feriee feriee = new Feriee(code, titre, regleCalcul);
+
+            Console.WriteLine("Date de Feriee: yyyy-mm-dd");           
+            var cultureInfo = new CultureInfo("es-ES");
+            string inputDate = Console.ReadLine();
+            string formatDateTime = "yyyy-MM-dd";
+            DateTime date = DateTime.ParseExact(inputDate, formatDateTime, cultureInfo);
+
+            DateFeriee dateFeriee = new DateFeriee(date, feriee);
+            dateFeriees.Add(dateFeriee);
+            feriees.Add(feriee.Code, feriee);
+
+            Console.WriteLine("Countinuez ajouter Feriee? Y/N");
+            string option = Console.ReadLine().ToUpper();
+            if (option == "Y")
+                return AddCalendrier(anne, dateFeriees, feriees);
+
+            Calendrier calendrier = new Calendrier(anne, dateFeriees, feriees);
+            return calendrier;
+        }
+        
         static void Main(string[] args)
         {
             Console.WriteLine("Evaluation 1 Yongjiang Liu Group 803: \n");
@@ -44,15 +76,20 @@ namespace Eval1YongjiangLiu803
             Feriee feriee8 = new Feriee(1225, "jour de Noël", "25 décembre");
 
             //Dictionary instance
-            feriees.Add(701, feriee5);
-            feriees.Add(901, feriee6);
-            feriees.Add(1012, feriee7);
-            feriees.Add(1225, feriee8);
+            feriees.Add(feriee5.Code, feriee5);
+            feriees.Add(feriee6.Code, feriee6);
+            feriees.Add(feriee7.Code, feriee7);
+            feriees.Add(feriee8.Code, feriee8);
 
             //02_6
-            Console.WriteLine("\n02_6 objet Feriee Values: \n");
+            Console.WriteLine("\n02_6 Dictionary instance objet  feriees Values: \n");
             Eval1.Exo02(feriees);
 
+            Console.WriteLine("\nOn peut faire ca avec ToString \n");
+            foreach(var feriee in feriees)
+            {
+                Console.WriteLine(feriee.Value.ToString());
+            }
             //02_7
             Console.WriteLine("\n02_7 Keys: \n");
             foreach (var feriee in feriees)
@@ -61,7 +98,7 @@ namespace Eval1YongjiangLiu803
             }
 
             //02_8
-            Console.WriteLine($"\nCode 901 avec object: {feriees[901].Code}, {feriees[901].Titre}, {feriees[901].RegleCalcul}. \n" );
+            Console.WriteLine($"\nTrouver valeur avec le key : 901, detail de objet: {feriees[901].Code}, {feriees[901].Titre}, {feriees[901].RegleCalcul}. \n" );
 
             // Question 03
             //Instance for testing errors
@@ -70,9 +107,14 @@ namespace Eval1YongjiangLiu803
 
             //Add instance to 2022 calendar, we can get any data from calendar instance...
             Calendrier calendrier2022 = new Calendrier(2022, dateFeriees, feriees);
+            calendrier2022 = AddCalendrier(2022, dateFeriees, feriees);               //User peut ajouter autre Feriees a Calendrier..
+
+            //Afficher list de canlendrier instance
             Console.WriteLine("\nPourrait faire la même chose avec l'instance du calendrier 2022...\n");
             Eval1.Exo01(calendrier2022.DateFeriees);
             Eval1.Exo02(calendrier2022.Feriees);
+
+
         }
 
     }

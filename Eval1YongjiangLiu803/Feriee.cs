@@ -31,7 +31,7 @@ namespace Eval1YongjiangLiu803
 
         public override string ToString()                                         // 01_3
         {
-            return $"{titre}, {regleCalcul}";
+            return $"{code, -10} {titre, -20} {regleCalcul, -20}";
         }
     }
 }
